@@ -5,7 +5,7 @@ import '../styles/index.styl'
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Emma Follender" />
     
   </Layout>
 )
