@@ -12,6 +12,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 import BgShapes from '../images/bg-shapes.svg';
+import Helmet from 'react-helmet';
 
 const Layout = ({ children, bgColor, hideHeader }) => {
   const data = useStaticQuery(graphql`
@@ -26,6 +27,9 @@ const Layout = ({ children, bgColor, hideHeader }) => {
 
   return (
     <>
+      <Helmet>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet"/>
+      </Helmet>
       <div className='main--wrapper'>
         <div className='bg-shapes--wrapper'>
           <div className={`bg-shapes ${bgColor}`}>
