@@ -47,6 +47,26 @@ header
             position relative
             bottom -1px
             cursor pointer
+            transition all .1s ease-in-out
+            position relative
+            &:before
+                content ''
+                box-sizing: border-box
+                position absolute
+                display inline-block
+                left 0
+                right 0
+                top 0
+                bottom 0
+                background pink
+                z-index -1
+                max-width 0
+                overflow hidden
+                transition: max-width .2s ease-in-out
+            &:hover
+                color blue
+                &:before
+                    max-width: 300px
             &.active
                 background pink 
                 color blue
