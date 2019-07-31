@@ -3,3 +3,24 @@ body
     font-weight: 400
     text-rendering: optimizeLegibility
     font-smoothing antialiased
+a
+    &.social-icon
+        display: inline-block
+        width 1em
+        margin-left 1em
+        vertical-align: bottom
+        line-height: 1
+        // &.twitter
+        //     color #3EADF4
+        // &.linkedin
+        //     color: #0276B5
+        path 
+            fill black
+        &.github
+            color: black
+            position: relative
+            &:after
+                content '*'
+                position: absolute
+                right -.5em
+                top -.25em

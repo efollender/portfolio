@@ -1,6 +1,9 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Twitter from '../images/icons/twitter-brands.svg'
+import Github from '../images/icons/github-brands.svg'
+import Linkedin from '../images/icons/linkedin-brands.svg'
 
 const AboutPage = () => (
   <Layout>
@@ -15,7 +18,18 @@ const AboutPage = () => (
       <br/><br/>
       She is currently building  UI experiences as a Sr. Developer at Microsoft in Seattle.
       <br/><br/>
-      When not writing code, she skis and bikes up mountains, and occassionally <a href="https://medium.com/@efollender">writes words</a>.
+      When not writing code, she skis and bikes up mountains, and occassionally <a href="https://medium.com/@efollender">writes words</a>.<br/><br/>
+      Get in touch | 
+      <a href="https://twitter.com/efollender" className='social-icon twitter'>
+        <Twitter/>
+      </a>
+      <a href="https://github.com/efollender" className='social-icon github'>
+        <Github/>
+      </a>
+      <a href="https://www.linkedin.com/in/emma-follender-158ab855/" className='social-icon linkedin'>
+        <Linkedin/>
+      </a><br/><br/>
+      <sub>* As most recent work is under NDA, it is not available on Github.</sub>
     </div>
   </Layout>
 )

@@ -21,7 +21,7 @@ const works = [
   },
   {
     title: 'Alloy LLC',
-    path: 'https://www.alloyllc.com'
+    path: 'http://www.alloyllc.com'
   },
   {
     title: 'Columbia University',

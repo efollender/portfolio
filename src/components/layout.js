@@ -29,6 +29,7 @@ const Layout = ({ children, bgColor, hideHeader }) => {
     <>
       <Helmet>
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet"/>
+        <link href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'/>
       </Helmet>
       <div className='main--wrapper'>
         <div className='bg-shapes--wrapper'>
