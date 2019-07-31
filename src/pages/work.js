@@ -8,16 +8,16 @@ const works = [
     path: 'https://path.org'
   },
   {
-    title: 'Netflix',
+    title: 'Netflix Media Center',
     path: 'https://media.netflix.com'
-  },
-  {
-    title: 'Snapchat Spectacles',
-    path: 'https://www.spectacles.com/'
   },
   {
     title: 'The Moth',
     path: 'https://themoth.org'
+  },
+  {
+    title: 'Snapchat Spectacles',
+    path: 'https://www.spectacles.com/'
   },
   {
     title: 'Alloy LLC',
@@ -35,7 +35,7 @@ const WorkPage = () => (
     <div className='works'>
       {works.map(work => 
         <div className='works--item'>
-          <span><a href={work.path}>{work.title}</a></span>
+          <span><a without rel="noopener noreferrer" target="_blank" href={work.path}>{work.title}</a></span>
         </div>
       )}
     </div>
