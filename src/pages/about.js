@@ -6,8 +6,7 @@ const AboutPage = () => (
   <Layout>
     <SEO title="About" />
     <div className='about--wrapper'>
-      She was a <a href="https://variety.com/2017/gaming/features/neopets-internet-girl-culture-1202897761/">Neopets girl</a>. She <em>is</em> an experimental developer who knows her shit.
-      It's been a wild ride.<br/><br/>
+      She was a <a href="https://variety.com/2017/gaming/features/neopets-internet-girl-culture-1202897761/">Neopets girl</a>. She <em>is</em> an experimental developer who loves a challenge.<br/><br/>
       After working for three years as a self-taught developer, her insatiable curiosity led her away from New York and landed her at a coding bootcamp in Austin, Texas.
       <br/><br/>
       There she built a full-stack foundation, but found that her passion lied solidly in building engaging UX. She is happiest when working closely with designers to create the unexpected.
