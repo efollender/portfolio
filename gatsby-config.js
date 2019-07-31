@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Emma Follender`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Emma Follender is a creative developer in Seattle`,
+    author: `@efollender`,
   },
   plugins: [
     `gatsby-plugin-stylus`,
