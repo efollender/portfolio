@@ -57,19 +57,62 @@ main
                     transform: scale(.3) translate
                     &:nth-child(odd)
                         fill none
-                        
         &--wrapper
             position absolute
             left 0
             right 0
             top 0
             bottom 0
+.stem 
+    width: 1px
+    height: 60%
+    margin-left: 7px
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.25))
+    animation: stem 1.2s linear infinite
+    position: absolute
+    &--wrapper
+        animation: drop 1.2s linear infinite
+        overflow hidden
+        position absolute
+        right 0
+        top 0
+        bottom 0
+        width 10px
+        transform translateY(-100%)
+        &:nth-child(odd)
+            animation-duration: .8s
+            .stem
+                animation-duration: .8s
+        for n in (1..10)
+            &:nth-child({n})
+                right 70px * n + n * sin(30deg)
+                animation-delay: n * .2s * sin(30deg)
+                .stem
+                    animation-delay: n * .2s * sin(30deg)
+
+
+@keyframes stem
+  0%
+        opacity: 1
+  65%
+        opacity: 1
+  75%
+        opacity: 0
+  100%
+        opacity: 0
+
+@keyframes drop
+    from
+        transform translateY(-100%)
+    to
+        transform translateY(110%)
+
 @keyframes fill
     to
         stroke-dashoffset: 0
 @keyframes grow
     to
         bottom 0
-@keyframes shrink 
+@keyframes shrink
     to
         max-height: 0
