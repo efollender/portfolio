@@ -1,0 +1,21 @@
+.about
+    &--wrapper
+        background yellow
+        margin 0 margin-xl
+        padding margin-sm
+        color blue
+        max-width: breakpoint-lg
+        @media screen and (max-width: breakpoint-md)
+            margin 0 margin-md
+        @media screen and (max-width: breakpoint-sm)
+            margin 0 margin-sm
+        a
+            text-decoration: none
+            color yellow
+            text-transform uppercase
+            font-family sans-serif
+            -webkit-text-stroke-width: 1px
+            -webkit-text-stroke-color: pink
+            &:hover
+                text-decoration: line-through
+                -webkit-text-stroke-color: blue

@@ -1,0 +1,74 @@
+main
+    z-index 1
+    flex 1 0 auto
+.main--wrapper
+    display: flex
+    flex-direction: column
+    min-height: 100vh
+    min-width 320px
+    .bg-shapes
+        background-color darken(blue, 10)
+        position absolute
+        z-index -1
+        height: 100%
+        width: 100%
+        min-width 320px
+        &.yellow
+            background-color yellow
+        svg
+            position absolute
+            bottom 0
+            width: 100vw
+            min-width 320px
+            height: 100vh
+            path
+                stroke-linejoin round
+        &:nth-child(2)
+            background none
+            overflow: hidden
+            bottom 20%
+            z-index: -2
+            animation grow .4s ease-in forwards 1.2s
+            svg
+                position: absolute
+                bottom -20%
+                animation grow .4s ease-in forwards 1.2s
+        &:first-child
+            top -20%
+            max-height: 5000px
+            overflow: hidden
+            // animation shrink 1s ease-out forwards 5s
+            @media screen and (max-width: breakpoint-md)
+                top 0%
+            svg
+                bottom 0%
+                position: fixed
+                @media screen and (max-width: breakpoint-md)
+                    width 200%
+            path
+                stroke-dasharray: 2500
+                stroke-dashoffset: -2500
+                animation fill 1.4s ease-in forwards
+                @media screen and (min-width: breakpoint-md)
+                    fill none
+                @media screen and (max-width: breakpoint-md)
+                    animation fill 1.2s ease-in forwards
+                    transform: scale(.3) translate
+                    &:nth-child(odd)
+                        fill none
+                        
+        &--wrapper
+            position absolute
+            left 0
+            right 0
+            top 0
+            bottom 0
+@keyframes fill
+    to
+        stroke-dashoffset: 0
+@keyframes grow
+    to
+        bottom 0
+@keyframes shrink 
+    to
+        max-height: 0

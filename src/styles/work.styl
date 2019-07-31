@@ -1,0 +1,30 @@
+.works
+    display: inline-block
+    @media screen and (max-width: breakpoint-md)
+        width 100%
+        padding 0 margin-md
+    @media screen and (max-width: breakpoint-sm)
+        width 100%
+        padding 0 margin-sm
+    &--item
+        display block
+        margin-bottom 1.5rem
+        @media screen and (max-width: breakpoint-md)
+            margin-bottom .5rem
+        span
+            font-family: Lato, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+            font-weight 600
+            a
+                text-decoration: none
+                color blue
+                display inline-block
+                background yellow
+                color darken(blue, 10)
+                padding 0 2em
+                padding-left 140px
+                &:hover
+                    background blue
+                    color yellow
+                @media screen and (max-width: breakpoint-md)
+                    padding 0 1em
