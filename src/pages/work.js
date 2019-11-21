@@ -16,6 +16,10 @@ const works = [
     path: 'https://themoth.org'
   },
   {
+    title: 'Aural Borealis - Installation for Pickathon Music Festival',
+    path: 'https://www.youtube.com/watch?v=fKGtF8Q5kHQ'
+  },
+  {
     title: 'Snapchat Spectacles',
     path: 'https://www.spectacles.com/'
   },
