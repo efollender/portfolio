@@ -19,7 +19,7 @@ const AboutPage = () => (
       She dipped her toes into product development, building UI experiences at <a href="https://www.microsoft.com/en-us/msrc">Microsoft</a> and <a href="https://frame.io/">Frame.io</a> (@ Adobe).
       <br/><br/>
       When not writing code, she skis and bikes up mountains, and occassionally <a href="https://medium.com/@efollender">writes words</a>.<br/><br/>
-      Get in touch | 
+      Get in touch <span className="about--spacer">|</span> 
       <a href="https://twitter.com/efollender" className='social-icon twitter'>
         <Twitter/>
       </a>
@@ -29,7 +29,6 @@ const AboutPage = () => (
       <a href="https://www.linkedin.com/in/emma-follender-158ab855/" className='social-icon linkedin'>
         <Linkedin/>
       </a><br/><br/>
-      <sub>* As most recent work is under NDA, it is not available on Github.</sub>
     </div>
   </Layout>
 )
