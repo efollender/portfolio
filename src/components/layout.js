@@ -11,7 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
-import BgShapes from '../images/bg-shapes.svg';
+import BgShapes from '../images/bg-shapes.inline.svg';
 import Helmet from 'react-helmet';
 
 const Layout = ({ children, bgColor, hideHeader }) => {
