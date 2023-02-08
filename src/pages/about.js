@@ -1,9 +1,9 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Twitter from '../images/icons/twitter-brands.svg'
-import Github from '../images/icons/github-brands.svg'
-import Linkedin from '../images/icons/linkedin-brands.svg'
+import Twitter from '../images/icons/twitter-brands.inline.svg'
+import Github from '../images/icons/github-brands.inline.svg'
+import Linkedin from '../images/icons/linkedin-brands.inline.svg'
 
 const AboutPage = () => (
   <Layout>

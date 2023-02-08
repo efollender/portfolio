@@ -1,5 +1,10 @@
 .works
-    display: inline-block
+    display: flex
+    flex-flow: row wrap
+    justify-content: flex-start
+    gap: 40px
+    margin 0 margin-xl
+    max-width: breakpoint-lg
     @media screen and (max-width: breakpoint-md)
         width 100%
         padding 0 margin-md
@@ -7,22 +12,19 @@
         width 100%
         padding 0 margin-sm
     &--item
-        display block
-        margin-bottom 1.5rem
-        @media screen and (max-width: breakpoint-md)
-            margin-bottom .5rem
+        display inline-block
+        width: 213px
+        height: 154px
+        background white
+        background-repeat: no-repeat
+        background-position: 50% 50%
         span
             font-weight 400
             a
                 text-decoration: none
                 color blue
                 display inline-block
-                background yellow
                 color darken(blue, 10)
-                padding 0 2em
-                padding-left 140px
                 &:hover
                     background blue
                     color yellow
-                @media screen and (max-width: breakpoint-md)
-                    padding 0 1em
