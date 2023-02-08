@@ -16,7 +16,7 @@ const AboutPage = () => (
       <br/><br/>
       She thrives on the pace and creativity of agencies and has worked at both <a href='https://brooklynfoundry.com/'>Brooklyn Digital Foundry</a> in New York and <a href="https://www.instrument.com">Instrument</a> in Portland, OR.
       <br/><br/>
-      She dipped her toes into product development, building UI experiences at Microsoft and Frame.io (@ Adobe).
+      She dipped her toes into product development, building UI experiences at <a href="https://www.microsoft.com/en-us/msrc">Microsoft</a> and <a href="https://frame.io/">Frame.io</a> (@ Adobe).
       <br/><br/>
       When not writing code, she skis and bikes up mountains, and occassionally <a href="https://medium.com/@efollender">writes words</a>.<br/><br/>
       Get in touch | 
