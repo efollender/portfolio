@@ -4,7 +4,9 @@
         margin 0 margin-xl
         padding margin-sm
         color blue
-        max-width: breakpoint-lg
+        max-width: breakpoint-xl
+        @media screen and (max-width: breakpoint-lg)
+            margin 0 margin-lg
         @media screen and (max-width: breakpoint-md)
             margin 0 margin-md
         @media screen and (max-width: breakpoint-sm)
