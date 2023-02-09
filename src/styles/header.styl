@@ -8,13 +8,16 @@ header
         padding-bottom: 3rem
         position: relative
     h1
-        padding 140px 140px 0
+        padding margin-xl margin-xl 0
         font-size: 2rem
         color lt-blue
+        @media screen and (max-width: breakpoint-lg)
+            padding margin-lg margin-lg 0
+            max-width: breakpoint-lg
         @media screen and (max-width: breakpoint-md)
-            padding margin-md
+            padding margin-md margin-md 0
         @media screen and (max-width: breakpoint-sm)
-            padding margin-sm
+            padding margin-sm margin-sm 0
         a
             font-variant: small-caps
             color transparent
@@ -23,9 +26,11 @@ header
             -webkit-text-stroke-color: pink
 .nav
     &--wrapper
-        margin 0 140px
+        margin 0 margin-xl
         padding-left: 2rem
         border-bottom 1px solid pink
+        @media screen and (max-width: breakpoint-lg)
+            margin 0 margin-lg
         @media screen and (max-width: breakpoint-md)
             margin 0 margin-md
         @media screen and (max-width: breakpoint-sm)

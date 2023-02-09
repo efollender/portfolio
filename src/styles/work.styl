@@ -7,6 +7,9 @@
     max-width: breakpoint-xl
     position: relative
     width 100%
+    @media screen and (max-width: breakpoint-lg)
+        padding 0 margin-lg
+        max-width: breakpoint-lg
     @media screen and (max-width: breakpoint-md)
         padding 0 margin-md
         max-width: breakpoint-md
@@ -30,9 +33,12 @@
             &:hover
                 background-size: 55%
         @media screen and (max-width: breakpoint-md)
-            max-width: 42%
-            flex 1 1 50%
+            max-width: 40%
+            flex 1 1 30%
         @media screen and (max-width: breakpoint-sm)
+            max-width: 42%
+            flex 1 0 50%
+        @media screen and (max-width: breakpoint-xs)
             max-width: 100%
             flex 1 0 100%
         span
