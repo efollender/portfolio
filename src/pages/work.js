@@ -51,10 +51,11 @@ const WorkPage = () => (
   <Layout>
     <SEO title="Work" />
     <div className='works'>
-      {works.map(work => 
-        <a without rel="noopener noreferrer" target="_blank" href={work.path} alt={work.title}>
-          <div className='works--item' style={{backgroundImage: `url(${work.logo})`}}/>
-         </a>
+      {works.map(work =>
+            <a className="works--item" without rel="noopener noreferrer" target="_blank" href={work.path} title={work.title}>
+            <div className="works--item--content"  style={{backgroundImage: `url(${work.logo})`}}/>
+
+            </a>
       )}
     </div>
   </Layout>

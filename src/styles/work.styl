@@ -3,22 +3,38 @@
     flex-flow: row wrap
     justify-content: flex-start
     gap: 40px
-    margin 0 margin-xl
-    max-width: breakpoint-lg
+    padding 0 margin-xl
+    max-width: breakpoint-xl
+    position: relative
+    width 100%
     @media screen and (max-width: breakpoint-md)
-        width 100%
         padding 0 margin-md
+        max-width: breakpoint-md
     @media screen and (max-width: breakpoint-sm)
-        width 100%
+        max-width: breakpoint-sm
         padding 0 margin-sm
     &--item
-        display inline-block
-        width: 213px
-        height: 154px
-        background white
-        background-repeat: no-repeat
-        background-position: 50% 50%
-        border: 1px solid pink
+        display flex
+        max-width: 213px
+        flex 0 0 25%
+        position: relative
+        &--content
+            background white
+            background-repeat: no-repeat
+            background-position: 50% 50%
+            background-size: 50%;
+            border: 1px solid pink
+            transition: background-size .1s ease-in-out
+            width 100%
+            padding-top 72%
+            &:hover
+                background-size: 55%
+        @media screen and (max-width: breakpoint-md)
+            max-width: 42%
+            flex 1 1 50%
+        @media screen and (max-width: breakpoint-sm)
+            max-width: 100%
+            flex 1 0 100%
         span
             font-weight 400
             a
